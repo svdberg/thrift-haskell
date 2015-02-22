@@ -58,7 +58,7 @@ executable thrift-hs-server
   other-extensions:    DeriveDataTypeable, OverloadedStrings
   
   -- Other library packages from which modules are imported.
-  build-depends:       base >=4.7 && <4.8, bytestring >=0.10 && <0.11, thrift, mysql-simple, text, vector, QuickCheck, hashable, unordered-containers, mysql
+  build-depends:       base >=4.7 && <4.8, bytestring >=0.10 && <0.11, thrift, mysql-simple, text, vector, QuickCheck, hashable, unordered-containers, mysql, attoparsec
   
   -- Directories containing source files.
   -- hs-source-dirs:      
