@@ -13,3 +13,10 @@ module Main where
    let m = Message {message_msg = L.pack messageText }
    result <- greet (BinaryProtocol handle, BinaryProtocol handle) m
    print result
+   putStrLn "Continue? (y/n)?"
+   con <- getLine
+   continue <- case con of
+     "y" -> return True
+     "n" -> return False
+      _   -> error
+   if continue then main else return ()
