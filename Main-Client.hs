@@ -18,5 +18,5 @@ module Main where
    continue <- case con of
      "y" -> return True
      "n" -> return False
-      _   -> error
+     _   -> error "B0RK"
    if continue then main else return ()
